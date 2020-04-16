@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'clothing_store.apps.ClothingStoreConfig', 
+    'pages.apps.PagesConfig',
 ]
 
 MIDDLEWARE = [
