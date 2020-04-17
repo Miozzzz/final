@@ -2,8 +2,8 @@
 
 
 <ul>
-    {% for clothes in all_clothing_list %}
-    <li>{{clothes.text}}<br>
+    {% for clothing in all_clothing_list %}
+    <li>{{clothing.text}}<br>
         <img src="{{clothing.image_url}}" style="max-width: 400;">
     </li>
     {% endfor %}
