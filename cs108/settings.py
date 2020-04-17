@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'clothing_store.apps.ClothingStoreConfig', 
     'pages.apps.PagesConfig',
+    'project',
 ]
 
 MIDDLEWARE = [
