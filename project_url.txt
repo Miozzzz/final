@@ -1,1 +1,1 @@
-https://pacific-tundra-86414.herokuapp.com
+https://pacific-tundra-86414.herokuapp.com/clothing

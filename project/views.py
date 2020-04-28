@@ -65,18 +65,18 @@ class UpdateDonatorView(UpdateView):
     template_name = "clothing/update_donator.html"
     queryset = Customer.objects.all()
 
-#def add_image(request, pk):
-#    '''A custom view function to handle the submission of an image upload.'''
-#    clothing = Clothing.objects.get(pk=pk)
-#    form = AddImageForm(request.POST or None, request.FILES or None)
-#    if form.is_valid():
-#        image = form.save(commit=False)
-#        image.clothing = clothing
-#        image.save()
-#    else:
-#        print("ErrorL the form was not valid.")
+def add_image(request, pk):
+    '''A custom view function to handle the submission of an image upload.'''
+    clothing = Clothing.objects.get(pk=pk)
+    form = AddImageForm(request.POST or None, request.FILES or None)
+    if form.is_valid():
+        image = form.save(commit=False)
+        image.clothing = clothing
+        image.save()
+    else:
+        print("ErrorL the form was not valid.")
 
-#    url = reverse('clothing', kwargs={'pk':pk})
-#    return redirect(url)
+    url = reverse('clothing', kwargs={'pk':pk})
+    return redirect(url)
 
 
