@@ -3,7 +3,7 @@ from .views import HomePageView, ClothingPageView, RandomClothingPageView, Creat
 
 urlpatterns = [
     path('random', RandomClothingPageView.as_view(), name='random'),
-    path('home', HomePageView.as_view(), name='home'),
+    path('', HomePageView.as_view(), name='home'),
     path('clothing/<int:pk>', ClothingPageView.as_view(), name='clothing'),
     path('donate', CreateDonateView.as_view(), name='donate'),
     path('register', CreateRegisterView.as_view(), name='register'),
