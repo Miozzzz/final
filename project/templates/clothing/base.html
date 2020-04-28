@@ -1,0 +1,21 @@
+<html>
+    <header style="background-color: lightpink; font-family: monospace; font-size: 0.5cm;">
+        <a href="{% url 'home' %}" style="margin-right: 10px;">Home</a> 
+        <a href="{% url 'random' %}"style="margin-right: 10px;">Surprise!</a>
+        <a href="{% url 'donate' %}"style="margin-right: 10px;">Donate</a>
+        <a href="{% url 'register' %}"style="margin-right: 10px;">Register</a>
+        <a href="{% url 'all_donator' %}"style="margin-right: 10px;">Donators</a>
+        <a href="{% url 'donation' %}"style="margin-right: 10px;">Donation</a>
+    </header>
+    <head>
+        <title>Clothing Store Page</title>
+    </head>
+    <body>
+        <h1 style="background-color: lightcoral; text-align: center; font-family: cursive;">Welcome to Yifan's Clothing Store!</h1>
+        <h2 style="background-color:rosybrown; text-align: center; font-family: cursive;">Register and Donate Now!</h2>
+    {% block content %}
+    {% endblock %}
+
+    </body>
+
+</html>

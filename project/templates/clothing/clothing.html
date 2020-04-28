@@ -1,8 +1,22 @@
+
+
+{% extends 'clothing/base.html' %}
+{% block content %}
+
+
 <center>
 
-<h1>Showing all clothings</h1>
+    <h1 style="font-family:cursive; color:purple">Let's see if this fit your dream outfit!</h1>
+    
+    
+    {{clothing.text}}<br>
+        <img src="{{clothing.image_url}}" style="max-width: 400;">
+    </center>
+    
 
 
-{{clothing.text}}<br>
-    <img src="{{clothing.image_url}}" style="max-width: 400;">
-</center>
+
+
+
+
+{% endblock %}

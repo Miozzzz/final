@@ -1,0 +1,20 @@
+{% extends 'clothing/base.html' %}
+{% block content %}
+
+<center>
+
+    <h1 style="font-family:cursive; color:purple">See our donators!</h1>
+
+</center>
+<ul>
+    {% for customer in all_customer_list %}
+    <li>Name: {{customer.name}} <br>
+        age:  {{customer.age}} <br>
+        email: {{customer.email}} <br>
+        <a href="{% url 'update_donator' customer.pk %}">Update this info</a>
+    </li><br>
+    
+    {% endfor %}
+</ul>
+
+{% endblock %}

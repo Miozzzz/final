@@ -1,0 +1,20 @@
+
+{% extends 'clothing/base.html' %}
+{% block content %}
+
+
+
+<center>
+<ul style="list-style-type: none;">
+    {% for clothing in all_donation_list %}
+    <li>{{clothing.text}}<br>
+        {{clothing.size}}<br>
+        Donated by {{clothing.donator}}<br>
+        <img src="{{clothing.image_url}}" style="max-width: 150;">
+    </li>
+    <br>
+    {% endfor %}
+</ul>
+</center>
+
+{% endblock %}
